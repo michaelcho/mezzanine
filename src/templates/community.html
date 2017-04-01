@@ -1,0 +1,12 @@
+<table>
+    <th>Username</th>
+    <th>Is Staff</th>
+    <th>Is Active</th>
+    {% for user in users %}
+        <tr>
+            <td>{{ user.username }}</td>
+            <td>{{ user.is_staff }}</td>
+            <td>{{ user.is_active }}</td>
+        </tr>
+    {% endfor %}
+</table>

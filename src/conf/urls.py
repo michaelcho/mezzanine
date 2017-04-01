@@ -8,6 +8,8 @@ from django.views.i18n import set_language
 from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
 
+from community import views
+
 
 admin.autodiscover()
 
@@ -38,6 +40,7 @@ urlpatterns += [
     # one out.
 
     url("^$", direct_to_template, {"template": "index.html"}, name="home"),
+    url("^community/$", views.community, name="community"),
 
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
     # ---------------------------------------------
