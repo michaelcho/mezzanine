@@ -17,6 +17,7 @@ class CommunityView(TemplateView):
                 "SELECT\n" +
                 "    `user`.`id`,\n"
                 "    `user`.`username`,\n"
+                "    `user`.`email`,\n"
                 "    `user`.`is_staff`,\n"
                 "    `user`.`is_active`,\n"
                 "    `group`.`id`,\n"
@@ -47,15 +48,16 @@ class CommunityView(TemplateView):
                 record = {
                     'id': row[0],
                     'username': row[1],
-                    'is_staff': row[2] > 0,
-                    'is_active': row[3] > 0,
+                    'email': row[2],
+                    'is_staff': row[3] > 0,
+                    'is_active': row[4] > 0,
                     'groups': []
                 }
                 output.append(record)
 
             record['groups'].append({
-                'id': row[4],
-                'name': row[5]
+                'id': row[5],
+                'name': row[6]
             })
 
         return output
