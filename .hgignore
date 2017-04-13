@@ -2,6 +2,7 @@ syntax: glob
 *.pyc
 *.pyo
 *.db
+<<<<<<< HEAD
 *.pot
 *.doctree
 .doctrees
@@ -16,3 +17,11 @@ dist
 project_template/static
 .project
 .pydevproject
+=======
+.DS_Store
+.coverage
+local_settings.py
+
+syntax: regexp
+^static/
+>>>>>>> c8e56f91b8c95833ffeb8282ca8ce63a0cdb5a86
