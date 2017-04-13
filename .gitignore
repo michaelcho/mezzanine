@@ -1,6 +1,7 @@
 *.pyc
 *.pyo
 *.db
+<<<<<<< HEAD
 *.pot
 *.doctree
 .doctrees
@@ -15,3 +16,8 @@ dist/
 mezzanine/project_template/static/
 /mezzanine/.project
 /mezzanine/.pydevproject
+=======
+.DS_Store
+.coverage
+.vagrant
+>>>>>>> 526a6a82f7e62690e61bf9f5139647a9ed168754

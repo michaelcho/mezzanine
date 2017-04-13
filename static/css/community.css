@@ -1,0 +1,9 @@
+        #community_table td, #community_table th {
+            padding: 5px;
+        }
+        .white {
+            background-color: white;
+        }
+        .gray {
+            background-color: lightgray;
+        }
